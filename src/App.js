@@ -3,6 +3,7 @@ import imgLogo from './imagenes/freecodecamp-logo.png';
 import Boton from './componentes/Boton';
 import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
+import { useState } from 'react';
 
 function App() {
   return (
