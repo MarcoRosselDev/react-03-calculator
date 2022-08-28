@@ -15,7 +15,11 @@ function App() {
   };
 
   const calcularResultado = () => {
-    setInput(evaluate(input));
+    if (input) {
+      setInput(evaluate(input));
+    } else {
+      setInput(input = 0);  // solución error de precionar = en vacio despues un numero imprime undefined
+    }
   };
 
   return (
