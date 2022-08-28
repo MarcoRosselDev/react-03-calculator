@@ -8,10 +8,13 @@ function Boton(props) {
 
   return(
     <div
-      className={`boton-contenedor ${esOperador(props.children) ? 'operador' : null}`}>
+      className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}>
       {props.children}
     </div>
   );
 }
 
 export default Boton;
+
+// .trimEnd() elimina espacios al final de un string,
+// en este caso queda un espacio cuando es falso asi que .trimEnd()
